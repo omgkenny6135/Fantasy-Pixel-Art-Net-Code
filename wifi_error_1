@@ -1,0 +1,173 @@
+Arduino:1.8.13 (Windows 10), 開發板:"NodeMCU 1.0 (ESP-12E Module), 80 MHz, Flash, Legacy (new can return nullptr), All SSL ciphers (most compatible), 4MB (FS:2MB OTA:~1019KB), 2, v2 Lower Memory, Disabled, None, Only Sketch, 115200"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In file included from E:\2021開發\單戀劇組燈條電控箱\Artnet_receiver_T1.ino\Artnet_receiver_T1.ino.ino:1:0:
+
+C:\Users\USER\Documents\Arduino\libraries\FastLED/FastLED.h:14:21: note: #pragma message: FastLED version 3.003.003
+
+ #    pragma message "FastLED version 3.003.003"
+
+                     ^
+
+In file included from C:\Users\USER\Documents\Arduino\libraries\FastLED/FastLED.h:65:0,
+
+                 from E:\2021開發\單戀劇組燈條電控箱\Artnet_receiver_T1.ino\Artnet_receiver_T1.ino.ino:1:
+
+C:\Users\USER\Documents\Arduino\libraries\FastLED/fastspi.h:130:23: note: #pragma message: No hardware SPI pins defined.  All SPI access will default to bitbanged output
+
+ #      pragma message "No hardware SPI pins defined.  All SPI access will default to bitbanged output"
+
+                       ^
+
+In file included from C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/Arduino.h:243:0,
+
+                 from sketch\Artnet_receiver_T1.ino.ino.cpp:1:
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:44:58: error: __c causes a section type conflict with __c
+
+     #define PSTRN(s,n) (__extension__({static const char __c[] __attribute__((__aligned__(n))) __attribute__((section( "\".irom0.pstr." __FILE__ "." __STRINGIZE(__LINE__) "."  __STRINGIZE(__COUNTER__) "\", \"aSM\", @progbits, 1 #"))) = (s); &__c[0];}))
+
+                                                          ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:38:76: note: in definition of macro 'FPSTR'
+
+ #define FPSTR(pstr_pointer) (reinterpret_cast<const __FlashStringHelper *>(pstr_pointer))
+
+                                                                            ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:48:19: note: in expansion of macro 'PSTRN'
+
+   #define PSTR(s) PSTRN(s,PSTR_ALIGN)
+
+                   ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:39:34: note: in expansion of macro 'PSTR'
+
+ #define F(string_literal) (FPSTR(PSTR(string_literal)))
+
+                                  ^
+
+C:\Users\USER\Documents\Arduino\libraries\ArtNet-0.2.1/Artnet.h:386:40: note: in expansion of macro 'F'
+
+                         Serial.println(F("universe out of bounds"));
+
+                                        ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:44:58: note: '__c' was declared here
+
+     #define PSTRN(s,n) (__extension__({static const char __c[] __attribute__((__aligned__(n))) __attribute__((section( "\".irom0.pstr." __FILE__ "." __STRINGIZE(__LINE__) "."  __STRINGIZE(__COUNTER__) "\", \"aSM\", @progbits, 1 #"))) = (s); &__c[0];}))
+
+                                                          ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:38:76: note: in definition of macro 'FPSTR'
+
+ #define FPSTR(pstr_pointer) (reinterpret_cast<const __FlashStringHelper *>(pstr_pointer))
+
+                                                                            ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:48:19: note: in expansion of macro 'PSTRN'
+
+   #define PSTR(s) PSTRN(s,PSTR_ALIGN)
+
+                   ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:39:34: note: in expansion of macro 'PSTR'
+
+ #define F(string_literal) (FPSTR(PSTR(string_literal)))
+
+                                  ^
+
+C:\Users\USER\Documents\Arduino\libraries\ArtNet-0.2.1/Artnet.h:386:40: note: in expansion of macro 'F'
+
+                         Serial.println(F("universe out of bounds"));
+
+                                        ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:44:58: error: __c causes a section type conflict with __c
+
+     #define PSTRN(s,n) (__extension__({static const char __c[] __attribute__((__aligned__(n))) __attribute__((section( "\".irom0.pstr." __FILE__ "." __STRINGIZE(__LINE__) "."  __STRINGIZE(__COUNTER__) "\", \"aSM\", @progbits, 1 #"))) = (s); &__c[0];}))
+
+                                                          ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:38:76: note: in definition of macro 'FPSTR'
+
+ #define FPSTR(pstr_pointer) (reinterpret_cast<const __FlashStringHelper *>(pstr_pointer))
+
+                                                                            ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:48:19: note: in expansion of macro 'PSTRN'
+
+   #define PSTR(s) PSTRN(s,PSTR_ALIGN)
+
+                   ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:39:34: note: in expansion of macro 'PSTR'
+
+ #define F(string_literal) (FPSTR(PSTR(string_literal)))
+
+                                  ^
+
+C:\Users\USER\Documents\Arduino\libraries\ArtNet-0.2.1/Artnet.h:383:36: note: in expansion of macro 'F'
+
+                     Serial.println(F("too many callbacks"));
+
+                                    ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:44:58: note: '__c' was declared here
+
+     #define PSTRN(s,n) (__extension__({static const char __c[] __attribute__((__aligned__(n))) __attribute__((section( "\".irom0.pstr." __FILE__ "." __STRINGIZE(__LINE__) "."  __STRINGIZE(__COUNTER__) "\", \"aSM\", @progbits, 1 #"))) = (s); &__c[0];}))
+
+                                                          ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:38:76: note: in definition of macro 'FPSTR'
+
+ #define FPSTR(pstr_pointer) (reinterpret_cast<const __FlashStringHelper *>(pstr_pointer))
+
+                                                                            ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h:48:19: note: in expansion of macro 'PSTRN'
+
+   #define PSTR(s) PSTRN(s,PSTR_ALIGN)
+
+                   ^
+
+C:\Users\USER\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\cores\esp8266/WString.h:39:34: note: in expansion of macro 'PSTR'
+
+ #define F(string_literal) (FPSTR(PSTR(string_literal)))
+
+                                  ^
+
+C:\Users\USER\Documents\Arduino\libraries\ArtNet-0.2.1/Artnet.h:383:36: note: in expansion of macro 'F'
+
+                     Serial.println(F("too many callbacks"));
+
+                                    ^
+
+exit status 1
+
+開發板 NodeMCU 1.0 (ESP-12E Module) 編譯錯誤。
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
